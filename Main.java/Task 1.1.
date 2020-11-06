@@ -1,0 +1,9 @@
+public class Task_1_1 {
+    public static void main(String[] args) {
+    String name = "name";
+    String city = "city";
+    int age = 28;
+        System.out.println(name+" "+city+" "+age);
+
+    }
+}
