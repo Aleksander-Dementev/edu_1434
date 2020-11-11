@@ -1,20 +1,25 @@
-import java.util.Scanner;
-public class Main {
+/* 
+Напиши программу, которая в методе main объявляет такие переменные:
+name типа String, age типа int и city типа String.
+Примечание: "объявить переменную" - значит то же, что и "создать переменную".
+Требования:
+•
+Объяви переменную name типа String.
+•
+Объяви переменную age типа int.
+•
+Объяви переменную city типа String.
+•
+Должны быть объявлены 3 переменные.
+*/
+
+
+public class Task_1_1 {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        String head1 = "Расчет количичества литров";
-        String head2 = "Введите параметры бассейна, метрах:";
-        String body1 = "Ширина, м.:";
-        String body2 = "Длина, м.:";
-        String body3 = "Высота, м.:";
-        String end1 = "Итого в бассейне литров:";
-        System.out.println(head1);
-        System.out.println(head2);
-        System.out.println(body1);
-        int a = scan.nextInt();
-        System.out.println(body2);
-        int b = scan.nextInt();
-        System.out.println(body3);
-        int c = scan.nextInt();
-        System.out.println(end1);
-        System.out.println(a*b*c*100);
+    String name = "name";
+    String city = "city";
+    int age = 28;
+        System.out.println(name+" "+city+" "+age);
+
+    }
+}
