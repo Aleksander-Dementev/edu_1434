@@ -1,0 +1,66 @@
+
+/*
+Создай классы Dog, Cat, Mouse.
+Добавь по три поля в каждый класс, на твой выбор.
+Создай объекты для героев мультика Том и Джерри.
+Так много, как только вспомнишь.
+Пример:
+Mouse jerryMouse = new Mouse("Jerry", 12 , 5),
+где 12 - высота в см,
+5 - длина хвоста в см.
+Требования:
+•+	Создай класс Dog.
+•+	Создай класс Cat.
+•+	В классе Dog должно быть три переменные.
+•+	В классе Cat должно быть три переменные.
+•	Должен быть создан хотя бы один объект типа Mouse.
+•	Должен быть создан хотя бы один объект типа Dog.
+•	Должен быть создан хотя бы один объект типа Cat.
+*/
+
+public class Task_4_4_ {
+    public static void main(String[] args) {
+        Mouse jerryMouse = new Mouse("Jerry", 12, 5);
+        Dog dogDog = new Dog("Dog", 50, 1);
+        Cat tomCat = new Cat("Tom", 31, 10);
+        System.out.println("Имя "+jerryMouse.name+", Рост "+ jerryMouse.height+", Длина хвоста "+jerryMouse.tail);
+        System.out.println("Имя "+dogDog.name+", Рост "+ dogDog.height+", Длина хвоста "+dogDog.tail);
+        System.out.println("Имя "+tomCat.name+", Рост "+ tomCat.height+", Длина хвоста "+tomCat.tail);
+    }
+}
+// класс 1
+class Mouse {
+    String name;
+    int height;
+    int tail;
+
+    public Mouse(String name, int height, int tail) {
+        this.name = name;
+        this.height = height;
+        this.tail = tail;
+    }
+}
+// класс 2
+class Dog {
+    String name;
+    int height;
+    int tail;
+
+    public Dog(String name, int height, int tail) {
+        this.name = name; //имя
+        this.height = height; //высота
+        this.tail = tail; //хвост
+    }
+}
+//класс 3
+class Cat {
+    String name;
+    int height;
+    int tail;
+
+    public Cat(String name, int height, int tail) {
+        this.name = name;
+        this.height = height;
+        this.tail = tail;
+    }
+}
