@@ -5,14 +5,21 @@ public class Task_2_8 {
 С помощью цикла for найдите произведение элементов этого массива.
 */
         public static void main(String[] args) {
-            int numbers[] = {2,3,4,5};
+          int[] numbers = {2, 3, 4, 5, 1};
         int sum = 0;
-        for (int i = 0; i < numbers.length; i++) {
-            sum *= numbers[i]; // sum = sum * numbers[i];
+        int i = 0;
+        while (sum <= 10) {
+            sum += numbers[i];
+            i++;
+            if (i == numbers.length && sum <= 10) {
+                System.out.println("Сумма всех числе массива меньше 10");
+                break;
+            }
+
+
         }
-        System.out.println(sum);
-
-        }    }
-
-
-
+        if (sum > 10) {
+            System.out.println(i);
+        }
+    }
+}
