@@ -8,7 +8,7 @@ public class Task_2_8 {
             int numbers[] = {2,3,4,5};
         int sum = 0;
         for (int i = 0; i < numbers.length; i++) {
-            sum += numbers[i]; // sum = sum + numbers[i];
+            sum *= numbers[i]; // sum = sum * numbers[i];
         }
         System.out.println(sum);
 
