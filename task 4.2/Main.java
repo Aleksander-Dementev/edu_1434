@@ -33,6 +33,23 @@ class Dog {
     public void setName(String name) {
         System.out.println("Привет, я кот меня зовут "+this.name+" мне "+this.age);
 
-
     }
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+       
+   
 }
