@@ -17,8 +17,8 @@ public class Task_2_11 {
                 break;
             }
         }
-        if (sum > 10) {
-            System.out.println(i);
+            if (sum > 10) {
+                System.out.println(i);
         }
     }
 }
