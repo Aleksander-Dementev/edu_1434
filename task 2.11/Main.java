@@ -5,19 +5,20 @@ public class Task_2_11 {
 с начала массива  надо сложить,
  чтобы в сумме получилось больше 10-ти.
 */
-         public static void main(String[] args) {
-             int[] naums = {2, 3, 1, 4, 1, 1};
-             int sum = 0;
-             for (int i = 0; i <naums.length; i++) {
-                 if (sum <= 10) sum += naums[i];
-                 {
-                     System.out.println(sum <= 10);
-
-                 }
-
-
-
-                 }
-             }
-         }
-
+        public static void main(String[] args) {
+        int[] naums = {2, 3, 1, 4, 1, 1};
+        int sum = 0;
+        int i = 0;
+        while (sum <= 10) {
+            sum += naums[i];
+            i++;
+            if (i == naums.length && sum <= 10) {
+                System.out.println("Сумма всех числе массива меньше 10");
+                break;
+            }
+        }
+        if (sum > 10) {
+            System.out.println(i);
+        }
+    }
+}
